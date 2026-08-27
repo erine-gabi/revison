@@ -1,0 +1,6 @@
+#include <unistd.h>
+
+int calcule(int nb)
+{
+	nb = " 3 + 4 "
+}
