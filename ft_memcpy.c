@@ -6,7 +6,7 @@
 /*   By: erinribe <erinribe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 10:36:55 by erinribe          #+#    #+#             */
-/*   Updated: 2026/11/06 18:41:44 by erinribe         ###   ########.fr       */
+/*   Updated: 2026/11/06 21:06:53 by erinribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,25 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
 	char	*psrc;
 	size_t	i;
 
-	if ( dst == NULL && src  == NULL)
-		return (dst);
-    psrc = (char *)src;
-	pdst = (char *)dst;
-	while (i < n - 1 && pdst[i] != '\0')
+	i = 0;
+    psrc = (char *)src; //14
+	pdst = (char *)dst; //10
+	while (i < n)
 	{
-		pdst[i] = psrc[i];
+		pdst[i] = psrc[i]; 
 		i++;
 	}
 	return (dst);
+}
+
+int main()
+{
+	int x = 0;
+	int y = 10;
+		
+
+	char s[] = "abcdefghi";
+	char d[] = "qqqqqqqqq";
+
+	ft_memcpy(&x, s, 2);
 }
